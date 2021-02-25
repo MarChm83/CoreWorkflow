@@ -11,5 +11,11 @@ namespace TestApp.Tests
         {
             Assert.AreEqual(2, 2);
         }
+
+        [Test]
+        public void AnotherTest()
+        {
+            Assert.Pass();
+        }
     }
 }
