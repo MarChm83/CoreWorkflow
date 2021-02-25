@@ -16,10 +16,10 @@ jobs:
           dotnet-version: 3.1.101
 
       - name: Restore
-        run: dotnet restore ./TestApp.API
+        run: dotnet restore ./TestApp.API/TestApp.API.csproj
 
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build ./TestApp.API/TestApp.API.csproj --configuration Release --no-restore
 
       - name: Test
         run: dotnet test --no-restore --verbosity normal
